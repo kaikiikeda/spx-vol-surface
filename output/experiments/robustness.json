@@ -1,0 +1,155 @@
+{
+  "svi_cross_check": [
+    {
+      "label": "Feb 20 (monthly)",
+      "rmse_multistart": 3.2551160728549564,
+      "rmse_quasi_explicit": 3.255113307307259,
+      "max_curve_gap_bp": 0.00012108479968686581
+    },
+    {
+      "label": "Feb 27 (weekly)",
+      "rmse_multistart": 7.429202973194398,
+      "rmse_quasi_explicit": 7.429213261015937,
+      "max_curve_gap_bp": 0.00022117651168884755
+    },
+    {
+      "label": "Mar 13 (weekly)",
+      "rmse_multistart": 15.798381411711834,
+      "rmse_quasi_explicit": 15.798468240676954,
+      "max_curve_gap_bp": 0.0006238159483418215
+    },
+    {
+      "label": "Mar 20 (monthly)",
+      "rmse_multistart": 16.146701792610124,
+      "rmse_quasi_explicit": 16.146638351336193,
+      "max_curve_gap_bp": 0.001190465012679276
+    },
+    {
+      "label": "Apr 17 (monthly)",
+      "rmse_multistart": 21.468415768233054,
+      "rmse_quasi_explicit": 21.46840880107003,
+      "max_curve_gap_bp": 0.0002602424442610385
+    },
+    {
+      "label": "May 15 (monthly)",
+      "rmse_multistart": 18.706140252809693,
+      "rmse_quasi_explicit": 18.706126122322008,
+      "max_curve_gap_bp": 0.0001915997720203233
+    },
+    {
+      "label": "Jun 18 (monthly, Thu)",
+      "rmse_multistart": 12.860957171057127,
+      "rmse_quasi_explicit": 12.860958031143085,
+      "max_curve_gap_bp": 1.2247254876918134e-05
+    },
+    {
+      "label": "Sep 18 (monthly)",
+      "rmse_multistart": 6.247456330778525,
+      "rmse_quasi_explicit": 6.247456278890152,
+      "max_curve_gap_bp": 1.5123122198978933e-06
+    },
+    {
+      "label": "Dec 18 (monthly)",
+      "rmse_multistart": 3.4308600423915503,
+      "rmse_quasi_explicit": 3.430860042116746,
+      "max_curve_gap_bp": 6.559272569539587e-07
+    }
+  ],
+  "heston_multistart": {
+    "runs": [
+      {
+        "start": [
+          0.04,
+          1.5,
+          0.05,
+          0.6,
+          -0.5
+        ],
+        "params": {
+          "v0": 0.026204104831024713,
+          "kappa": 2.104174519414556,
+          "theta": 0.04053327616356492,
+          "sigma": 0.7800778449551843,
+          "rho": -0.7102694450974294
+        },
+        "rmse_bp": 2.298262606271859,
+        "seconds": 1.346036434173584
+      },
+      {
+        "start": [
+          0.01,
+          5.0,
+          0.02,
+          0.3,
+          -0.2
+        ],
+        "params": {
+          "v0": 0.026204104438327734,
+          "kappa": 2.10417471664531,
+          "theta": 0.04053327666207439,
+          "sigma": 0.7800778349119218,
+          "rho": -0.7102694724153129
+        },
+        "rmse_bp": 2.2982626060262525,
+        "seconds": 1.3104069232940674
+      },
+      {
+        "start": [
+          0.1,
+          0.5,
+          0.1,
+          1.5,
+          -0.9
+        ],
+        "params": {
+          "v0": 0.026204104391024247,
+          "kappa": 2.1041782106018907,
+          "theta": 0.04053325852190712,
+          "sigma": 0.7800781189973083,
+          "rho": -0.7102694437946567
+        },
+        "rmse_bp": 2.2982626045516086,
+        "seconds": 2.2670681476593018
+      }
+    ],
+    "max_rel_spread": 1.7542200169837092e-06
+  },
+  "mc_checks": [
+    {
+      "seed": 1,
+      "steps_per_year": 1460,
+      "max_abs_mean_z": 0.7263459480588691,
+      "share_within_2se": 1.0
+    },
+    {
+      "seed": 2,
+      "steps_per_year": 1460,
+      "max_abs_mean_z": 0.9420506442350487,
+      "share_within_2se": 0.925
+    },
+    {
+      "seed": 3,
+      "steps_per_year": 1460,
+      "max_abs_mean_z": 1.192868647604937,
+      "share_within_2se": 0.8861111111111111
+    },
+    {
+      "seed": 4,
+      "steps_per_year": 1460,
+      "max_abs_mean_z": 1.3435844963388723,
+      "share_within_2se": 0.8833333333333333
+    },
+    {
+      "seed": 1,
+      "steps_per_year": 365,
+      "max_abs_mean_z": 1.1648132970349383,
+      "share_within_2se": 0.9777777777777777
+    },
+    {
+      "seed": 1,
+      "steps_per_year": 52,
+      "max_abs_mean_z": 0.6515649080446346,
+      "share_within_2se": 0.9833333333333333
+    }
+  ]
+}

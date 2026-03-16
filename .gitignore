@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+cpp/heston_mc
+data/mc_*.csv
+data/*.pkl
+paper/*.aux
+paper/*.log
+paper/*.bbl
+paper/*.blg
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.out
